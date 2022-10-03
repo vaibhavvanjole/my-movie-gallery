@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.backdrop{
+    position: fixed;
+    top:0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    animation: fadeIn .3s ease-in-out forwards;
+}
+
+.myModal{
+    position: fixed;
+    top:25%;
+    width: 60%;
+    left:20%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ededed;
+    animation: slideDown .5s ease-in-out forwards;
+}
+.myModalContent h3 .myClose{
+    float: right;
+    cursor: pointer;
+}
+
+.card-body{
+    height: 400px;
+}
+.card-body img {
+    vertical-align: middle;
+    border-style: none;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+@keyframes slideDown{
+    from{
+        opacity: 0;
+        transform: translateY(-60px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

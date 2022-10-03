@@ -11,8 +11,45 @@
 </head>
 <body>
     <header>
-        
+        <div class="row bg-primary align-items-center p-4 mb-4">
+            <div class="col-md-6">
+                <h1 class="h1 text-white">My Movie Gallery</h1>
+            </div>
+            <div class="col-md-6 text-right">
+                <button class="btn btn-success" id="showModalBtn">Add Movie</button>
+            </div>
+        </div>
     </header>
+
+    <!-- position elements -->
+
+    <div class="backdrop d-none" id="backdrop"></div>
+    <div class="myModal d-none" id="myModal">
+        <div class="myModalContent">
+            <h3>Add movie Details
+                <i class="fa-sharp fa-solid fa-xmark myClose"></i>
+            </h3>
+            <form>
+                <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" id="title" class="form-control">
+                </div>
+            <div class="form-group">
+                <label for="imgUrl">Image Url</label>
+                <input type="text" id="imgUrl" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="rating">Rating</label>
+                <input type="text" id="rating" class="form-control">
+            </div>
+            <div class="form-grop text-right">
+                <button type="submit" class="btn btn-success">Add Movie</button>
+                <button:button class="btn btn-danger myClose">Cancel</button:button>
+            </div>
+            </form>
+        </div>
+    </div>
+
    <script src="assets/js/app.js"></script>
 </body>
 </html>
