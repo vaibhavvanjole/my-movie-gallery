@@ -1,0 +1,3 @@
+
+var cl = console.log;
+
