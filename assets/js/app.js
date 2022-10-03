@@ -17,14 +17,14 @@ const creatMovie = (arr) =>{
     let result = '';
     arr.forEach(everyMovie =>{
      result += `
-     <div class="col-md-4 mt-4">
+     <div class="col-sm-6 col-md-4 mt-4">
                  <div class="card">
                      <div class="card-body">
                          <h3>${everyMovie.title}</h3>
                          <figure>
                              <img src="${everyMovie.imgURL}" alt="${everyMovie.title}" title="${everyMovie.title}">
                              <figcaption>
-                                 <p>${everyMovie.rating}/5</p>
+                                 <p>${everyMovie.rating}[0-9]/5</p>
                              </figcaption>
                          </figure>
                      </div>
