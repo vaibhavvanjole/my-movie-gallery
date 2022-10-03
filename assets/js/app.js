@@ -17,9 +17,9 @@ const creatMovie = (arr) =>{
     let result = '';
     arr.forEach(everyMovie =>{
      result += `
-     <div class="col-md-4">
+     <div class="col-md-4 mt-4">
                  <div class="card">
-                     <div class="card-boy">
+                     <div class="card-body">
                          <h3>${everyMovie.title}</h3>
                          <figure>
                              <img src="${everyMovie.imgURL}" alt="${everyMovie.title}" title="${everyMovie.title}">
@@ -33,7 +33,7 @@ const creatMovie = (arr) =>{
     })
     movieContainer.innerHTML = result;
  }
- 
+
 const modalShowHideHandler =(e) =>{
     backdrop.classList.toggle('d-none');
     myModal.classList.toggle('d-none');
